@@ -12,9 +12,10 @@ Cardboard Boxing is an entertaining game crafted using the C# programming langua
 
 ## About the Project
 
-This project represents my initial foray into the exciting realm of game development and my journey of mastering the C# programming language. As a testament to my growth and passion for creating immersive gaming experiences, Cardboard Boxing serves as a milestone in my ongoing exploration of the game development landscape.
+This project represents my the first step in my journey of game development and C# programming. As a testament to my growth and passion for creating immersive gaming experiences, Cardboard Boxing serves as a milestone in my ongoing exploration of the game development landscape.
 
-Feel free to explore the codebase. Your feedback is highly appreciated as I continue to refine and expand this project. Thank you for joining me on this adventure!
+Feel free to explore the codebase. Your feedback is highly appreciated as I continue to refine and expand this project. 
+(code is in assets > scripts > c# files)
 
 ### How to Play
 
