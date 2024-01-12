@@ -21,6 +21,8 @@ public class badminionscript : MonoBehaviour
     public float explosionRadius = 5f;
 
     public AudioSource shorterexplosionsound;
+
+    // Initialize health, damage, and destroy the object after a specified lifespan.
     void Start()
     {
         health = 20;
@@ -29,6 +31,7 @@ public class badminionscript : MonoBehaviour
         spawnpop.Play();
     }
 
+    // Update the minion's navigation towards the player's position.
     void Update()
     {
         minionNavMesh.SetDestination(playertransform.position);
@@ -40,12 +43,14 @@ public class badminionscript : MonoBehaviour
         }
     }
 
+    // Apply knockback force to the minion.
     public void ApplyKnockback(Vector3 direction, float force)
     {
         Rigidbody minionRigidbody = GetComponent<Rigidbody>();
         minionRigidbody.AddForce(direction * force, ForceMode.Impulse);
     }
 
+    // Handle collisions with other objects.
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("box"))
@@ -65,6 +70,7 @@ public class badminionscript : MonoBehaviour
         }
     }
 
+    // Explode the minion, applying force to nearby objects and reducing its health.
     private void Explode()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);

@@ -109,16 +109,22 @@ public class enemyscript : MonoBehaviour
 
     void Start()
     {
+        // Initialize original colors and speed
         originalColor = enemyMaterial.color;
         orignalFaceColor = enemyfaceMaterial.color;
         originalspeed = enemySpeed;
+        
+        // Set initial game state
         quitgame.SetActive(false);
         playagain.SetActive(false);
         gameover.enabled = false;
+
+        // Get Rigidbody and initial knockback distance
         rb = GetComponent<Rigidbody>();
         knockbackDistance = 5.0f;
         Rigidbody = ridgebox.GetComponent<Rigidbody>();
 
+        // Determine difficulty and set initial values accordingly
         difficulty = PlayerPrefs.GetString("Difficulty");
 
         if (difficulty == "Easy")
@@ -151,6 +157,7 @@ public class enemyscript : MonoBehaviour
 
     void Update()
     {
+        // Handle enemy navigation
         if (isRising)
         {
             enemy.isStopped = true;
@@ -208,10 +215,12 @@ public class enemyscript : MonoBehaviour
         setenemypower();
     }
 
+    // Handle collisions
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("pickup"))
         {
+            // Handle power-up pickup
             powerding.Play();
             other.gameObject.SetActive(false);
             transform.localScale += scaleChange;
@@ -230,6 +239,7 @@ public class enemyscript : MonoBehaviour
 
         if (other.gameObject.CompareTag("bombshell pickup"))
         {
+            // Handle bombshell pickup
             health += 10;
             other.gameObject.SetActive(false);
             fuse = true;
@@ -238,6 +248,7 @@ public class enemyscript : MonoBehaviour
 
         if (other.gameObject.CompareTag("nuke pickup"))
         {
+            // Handle nuke pickup
             health += 5;
             downForceActive = true;
             activated = true;
@@ -247,12 +258,14 @@ public class enemyscript : MonoBehaviour
 
         else if (other.gameObject.CompareTag("spawner pickup"))
         {
+            // Handle spawner pickup
             other.gameObject.SetActive(false);
             spawnMinions();
         }
 
         else if (other.gameObject.CompareTag("landmine pickup"))
         {
+            // Handle landmine pickup
             other.gameObject.SetActive(false);
             Vector3 offset = new Vector3(0f, 3f, 0f);
             target = enemytransform.position + offset;
@@ -261,12 +274,14 @@ public class enemyscript : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("heal pickup"))
         {
+            // Handle heal pickup
             healthpickup.Play();
             other.gameObject.SetActive(false);
             health += 50;
         }
         else if (other.gameObject.CompareTag("landmine"))
         {
+            // Handle landmine collision
             other.gameObject.SetActive(false);
             shorterexplosionsound.Play();
             Instantiate(exp, transform.position, transform.rotation);
@@ -293,6 +308,7 @@ public class enemyscript : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("ice pickup"))
         {
+            // Handle ice pickup
             playercontroller navigate = playercount.GetComponent<playercontroller>();
             StartCoroutine(freezeOther());
             other.gameObject.SetActive(false);
@@ -304,6 +320,7 @@ public class enemyscript : MonoBehaviour
         }
         if (other.CompareTag("box") && fuse)
         {
+            // Handle box explosion when fused
             fusesound.Stop();
             shorterexplosionsound.Play();
             Instantiate(exp, transform.position, transform.rotation);
@@ -319,11 +336,13 @@ public class enemyscript : MonoBehaviour
         }
         else if (other.CompareTag("box"))
         {
+            // Handle box collision
             hit.Play();
             playercount.health -= damage;
         }
         else if (other.CompareTag("good minion"))
         {
+            // Handle collision with good minion
             hit.Play();
             goodminionscript minionScript = other.gameObject.GetComponent<goodminionscript>();
             minionScript.health -= damage;
@@ -347,6 +366,7 @@ public class enemyscript : MonoBehaviour
 
     IEnumerator bombfuse()
     {
+        // Coroutine for bombshell fuse
         fusesound.Play();
         enemyMaterial.color = Color.red;
         enemyfaceMaterial.color = Color.red;
@@ -360,6 +380,7 @@ public class enemyscript : MonoBehaviour
 
     private IEnumerator SmoothRise()
     {
+        // Coroutine for smooth rise effect
         float riseHeight = 15.0f;
         float originalHeight = transform.position.y;
         float riseDuration = .5f;
@@ -424,6 +445,7 @@ public class enemyscript : MonoBehaviour
 
     void knockBack()
     {
+        // Function to handle knockback effect on collision with player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
         if (distanceToPlayer <= knockbackDistance)
         {
@@ -441,6 +463,7 @@ public class enemyscript : MonoBehaviour
 
     Transform FindClosestPowerup()
     {
+        // Find the closest powerup to the enemy
         Transform closestPowerup = null;
         float closestDistance = float.MaxValue;
 
@@ -461,21 +484,25 @@ public class enemyscript : MonoBehaviour
 
     void setenemyhealth()
     {
+        // Update enemy health UI text
         enemyhealth.text = "Health: " + health.ToString();
     }
 
     void setenemypower()
     {
+        // Update enemy power UI text
         enemypower.text = "Power: " + count.ToString();
     }
 
     void initializePowerups()
     {
+        // Initialize the list of powerup objects in the scene
         powerups.Clear();
         string[] powerupTags = new string[] { "pickup", "bombshell pickup", "nuke pickup", "spawner pickup", "heal pickup", "ice pickup", "landmine pickup" };
 
         foreach (string tag in powerupTags)
         {
+            // Find all game objects with the specified tags and add them to the powerups list
             GameObject[] powerupObjects = GameObject.FindGameObjectsWithTag(tag);
             powerups.AddRange(powerupObjects);
         }
@@ -483,6 +510,7 @@ public class enemyscript : MonoBehaviour
 
     private void updatehealthbar()
     {
+        // Update the health bar UI based on the current difficulty and enemy health
         float normalizedHealth = 0;
         if (difficulty == "Easy")
         {
@@ -501,15 +529,15 @@ public class enemyscript : MonoBehaviour
 
     private IEnumerator isOtherHit()
     {
+        // Coroutine to track if the enemy hit another object
         ifPlayerHit = true;
         yield return new WaitForSeconds(0.5f);
         ifPlayerHit = false;
     }
 
-   
-
     void spawnMinions()
     {
+        // Spawn minions around the enemy
         foreach (Vector3 offset in spawnOffset)
         {
             Vector3 spawnPosition = enemytransform.position + offset;
@@ -528,6 +556,7 @@ public class enemyscript : MonoBehaviour
 
     IEnumerator freezeOther()
     {
+        // Freeze the player for a duration when hit by an ice pickup
         playercontroller navigate = playercount.GetComponent<playercontroller>();
         freezing.Play();
 
@@ -547,7 +576,4 @@ public class enemyscript : MonoBehaviour
             playerRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
     }
-
-
-
 }
