@@ -21,6 +21,10 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 
 To play the game, please send me a message, and I will provide you with a download link for the game file.
 
+### Preview
+
+https://drive.google.com/drive/u/0/folders/1hlPk8olVSj_8RccKXScsPtD3EPrnS6UV
+
 ## Contact
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out to me:
