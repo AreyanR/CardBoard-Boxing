@@ -18,8 +18,7 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 (code is in assets > scripts > c# files)
 
 ### How to Play
-
-To play the game, please send me a message, and I will provide you with a download link for the game file.
+(https://play.unity.com/mg/other/cardboardboxing)
 
 ### Preview
 
