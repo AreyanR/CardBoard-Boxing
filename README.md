@@ -18,7 +18,7 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 (code is in assets > scripts > c# files)
 
 ### How to Play
-(https://play.unity.com/mg/other/cardboardboxing)
+https://play.unity.com/mg/other/cardboardboxing
 
 ### Preview
 
