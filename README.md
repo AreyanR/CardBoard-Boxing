@@ -2,7 +2,7 @@
 
 ## Description
 
-Cardboard Boxing is an entertaining game crafted using the C# programming language. Step into the world of cardboard boxing, where you'll enter the ring to face off against formidable opponents, all while in a dynamic gameplay environment. Brace yourself for intense boxing matches and be on the lookout for randomly appearing power-ups that can completely alter the course of the game. Please note that this game is a work in progress.
+Cardboard Boxing is an entertaining game crafted using the C# programming language. You'll enter the ring to face off against formidable opponents, all while in a dynamic gameplay environment. Be ready for intense boxing matches and be on the lookout for randomly appearing power-ups that can completely alter the course of the game. Please note that this game is a work in progress.
 
 ## Key Features
 
