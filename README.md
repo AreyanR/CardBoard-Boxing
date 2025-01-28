@@ -20,6 +20,12 @@ Cardboard Boxing is an entertaining game crafted using the C# programming langua
 - **Purple**: Spawns 3 minions that assist in combat.
 
 
+## Game Controls
+
+- **Movement**: Use `WASD` or Arrow Keys to move.
+- **Dodge**: Press `Spacebar` to dodge.
+
+
 ## About the Project
 
 This project represents my first step into game development and C# programming. The inspiration for this project came from the boxing scene found in this [YouTube clip](https://www.youtube.com/watch?v=Y7rw9gqfZow&ab_channel=TheSpongeFanatic). I remember watching it as a kid and wanted to bring it to a digital world. I thought it would be a fun way to introduce myself to Unity and also serves as a milestone in my ongoing exploration of game development.
