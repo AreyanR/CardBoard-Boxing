@@ -29,7 +29,7 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 (code is in assets > scripts > c# files)
 
 ### How to Play
-https://play.unity.com/mg/other/cardboardboxing
+https://play.unity.com/en/games/73368904-b323-45e5-a73e-c48d19f9d566/cardboardboxing
 
 ### Preview
 
