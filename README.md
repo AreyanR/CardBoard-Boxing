@@ -8,6 +8,7 @@ Cardboard Boxing is an entertaining game crafted using the C# programming langua
 
 - Engage in boxing matches against cardboard box opponents.
 - Experience unpredictable power-ups.
+- Player has a dodge for enhanced movment.
 
 ### Power-Ups
 
