@@ -29,13 +29,22 @@ This project represents my first step into game development and C# programming. 
 Feel free to explore the codebase. Your feedback is highly appreciated as I continue to refine and expand this project. 
 (code is in assets > scripts > c# files)
 
-### How to Play
-https://play.unity.com/en/games/73368904-b323-45e5-a73e-c48d19f9d566/cardboardboxing
+## How to Play
 
-### Preview
+- **Play in Your Web Browser**: [Click Here ](https://play.unity.com/en/games/73368904-b323-45e5-a73e-c48d19f9d566/cardboardboxing)
 
-- https://drive.google.com/file/d/1iLSOzoPfUDPcJv1Air1_rknpiHsYwKpI/view?usp=sharing
-- https://drive.google.com/file/d/1v-MOwmrqNi-BiZBWdDwm-T1CqdFKxTDw/view?usp=sharing
+---
+
+## Preview
+
+- ### [Gameplay Footage](https://drive.google.com/file/d/1v-MOwmrqNi-BiZBWdwm-T1CqdFKxTDw/view?usp=sharing)
+
+| ![Preview1](images/preview1.png) | ![Preview2](images/preview2.png) |
+|:--------------------------------:|:--------------------------------:|
+
+---
+
+
 
 ## Contact
 
