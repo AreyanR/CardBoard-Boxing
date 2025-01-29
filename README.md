@@ -42,15 +42,13 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 
 ## Preview
 
-### Gameplay Footage
-- [Watch the Gameplay Footage](https://drive.google.com/file/d/1iLSOzoPfUDPcJv1Air1_rknpiHsYwKpI/view?usp=sharing)
+| Main Menu | Difficulty Selection |
+|:---:|:---:|
+| ![Preview1](images/preview2.png) | ![Preview2](images/preview1.png) |
 
-| ![Preview1](images/preview1.png) | ![Preview2](images/preview2.png) |
-|:--------------------------------:|:--------------------------------:|
-
----
-
-
+| Gameplay |
+|:---:
+| ![Gameplay Preview](images/gameplay.gif) |
 
 ## Contact
 
