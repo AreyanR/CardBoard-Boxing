@@ -46,7 +46,7 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 |:---:|:---:|
 | ![Preview1](images/preview2.png) | ![Preview2](images/preview1.png) |
 
-| Gameplay |
+|[Gameplay](https://drive.google.com/file/d/1iLSOzoPfUDPcJv1Air1_rknpiHsYwKpI/view?usp=sharing)|
 |:---:
 | ![Gameplay Preview](images/gameplay.gif) |
 
