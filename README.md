@@ -44,7 +44,7 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 
 | Main Menu | Difficulty Selection |
 |:---:|:---:|
-| ![Preview1](images/preview2.png) | ![Preview2](images/preview1.png) |
+| ![Preview1](images/preview1.png) | ![Preview2](images/preview2.png) |
 
 |[Gameplay](https://drive.google.com/file/d/1iLSOzoPfUDPcJv1Air1_rknpiHsYwKpI/view?usp=sharing)|
 |:---:
