@@ -1,5 +1,15 @@
 # Cardboard Boxing
 
+## Preview
+
+| Main Menu | Difficulty Selection |
+|:---:|:---:|
+| ![Preview1](images/preview1.png) | ![Preview2](images/preview2.png) |
+
+|[Gameplay](https://drive.google.com/file/d/1iLSOzoPfUDPcJv1Air1_rknpiHsYwKpI/view?usp=sharing)|
+|:---:
+| ![Gameplay Preview](images/gameplay.gif) |
+
 ## Description
 
 Cardboard Boxing is an entertaining game crafted using the C# programming language. You'll enter the ring to face off against formidable opponents, all while in a dynamic gameplay environment. Be ready for intense boxing matches and be on the lookout for randomly appearing power-ups that can completely alter the course of the game.
@@ -38,17 +48,6 @@ Feel free to explore the codebase. Your feedback is highly appreciated as I cont
 
 - **Play in Your Web Browser**: [Click Here ](https://play.unity.com/en/games/73368904-b323-45e5-a73e-c48d19f9d566/cardboardboxing)
 
-
-
-## Preview
-
-| Main Menu | Difficulty Selection |
-|:---:|:---:|
-| ![Preview1](images/preview1.png) | ![Preview2](images/preview2.png) |
-
-|[Gameplay](https://drive.google.com/file/d/1iLSOzoPfUDPcJv1Air1_rknpiHsYwKpI/view?usp=sharing)|
-|:---:
-| ![Gameplay Preview](images/gameplay.gif) |
 
 ## Contact
 
